@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV Dealer - Detail & Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="logo">⚡ EV<span>Dealer</span></a>
+            <nav class="nav" id="mainNav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Beranda</a></li>
+                    <li><a href="katalog.html" class="nav__link">Katalog</a></li>
+                    <li><a href="detail.html" class="nav__link active">Booking</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" id="hamburgerBtn">☰</button>
+        </div>
+    </header>
+
+    <main class="container section">
+        <div class="detail-layout" id="detailContainer">
+            <!-- Galeri & spesifikasi akan diisi oleh JS -->
+        </div>
+
+        <div class="booking-section">
+            <h2>Booking Test Drive</h2>
+            <form id="bookingForm" class="booking-form">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama" placeholder="Nama Anda" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="email@contoh.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="model">Model Pilihan</label>
+                    <select id="model" name="model" required></select>
+                </div>
+                <div class="form-group">
+                    <label for="tanggal">Tanggal Test Drive</label>
+                    <input type="date" id="tanggal" name="tanggal" required>
+                </div>
+                <button type="submit" class="btn btn--primary btn--full">Kirim Booking</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 EV Dealer. Seluruh hak cipta dilindungi.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
