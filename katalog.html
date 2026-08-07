@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV Dealer - Katalog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="logo">⚡ EV<span>Dealer</span></a>
+            <nav class="nav" id="mainNav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Beranda</a></li>
+                    <li><a href="katalog.html" class="nav__link active">Katalog</a></li>
+                    <li><a href="detail.html" class="nav__link">Booking</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" id="hamburgerBtn">☰</button>
+        </div>
+    </header>
+
+    <main class="container section">
+        <h1 class="page-title">Katalog Mobil Listrik</h1>
+
+        <div class="filter-bar">
+            <select id="filterMerek" class="filter-select">
+                <option value="semua">Semua Merek</option>
+                <option value="Tesla">Tesla</option>
+                <option value="Hyundai">Hyundai</option>
+                <option value="Wuling">Wuling</option>
+                <option value="BMW">BMW</option>
+            </select>
+            <select id="filterHarga" class="filter-select">
+                <option value="semua">Semua Harga</option>
+                <option value="500">Di bawah Rp 500 Juta</option>
+                <option value="1000">Rp 500 Juta - Rp 1 Miliar</option>
+                <option value="2000">Di atas Rp 1 Miliar</option>
+            </select>
+        </div>
+
+        <div class="grid grid--catalog" id="catalogGrid"></div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 EV Dealer. Seluruh hak cipta dilindungi.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
